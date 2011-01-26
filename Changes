@@ -1,0 +1,9 @@
+Revision history for Perl extension Devel::SlowBless.
+
+0.02  Thu Jan 13 10:26:00 2010
+    - Fixed unit test to work for 5.8 and 5.10.
+
+0.01  Mon Nov 29 10:51:46 2010
+	- original version; created by h2xs 1.23 with options
+		-A -e -f --use-xsloader -n Devel::SlowBless
+
