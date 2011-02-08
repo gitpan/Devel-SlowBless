@@ -1,6 +1,5 @@
 package Devel::SlowBless;
 
-use 5.008009;
 use strict;
 use warnings;
 require Carp;
@@ -26,7 +25,7 @@ our @EXPORT = qw(
 	
 );
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 require XSLoader;
 XSLoader::load('Devel::SlowBless', $VERSION);
@@ -60,7 +59,7 @@ sub DB::DB {
     {
         if ($warn)
         {
-            Carp::cluck "[$pid] AMAGIC $amg_gen -> $cur_amg\n";
+            Carp::cluck("[$pid] AMAGIC $amg_gen -> $cur_amg\n");
         }
         $amg_gen = $cur_amg;
     }
@@ -68,7 +67,7 @@ sub DB::DB {
     {
         if ($warn)
         {
-            Carp::cluck "[$pid] SUB GEN $sub_gen - $cur_sub\n";
+            Carp::cluck("[$pid] SUB GEN $sub_gen - $cur_sub\n");
         }
         $sub_gen = $cur_sub;
     }
