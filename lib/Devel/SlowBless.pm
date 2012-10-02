@@ -25,7 +25,7 @@ our @EXPORT = qw(
 	
 );
 
-our $VERSION = '0.04';
+our $VERSION = '0.05';
 
 require XSLoader;
 XSLoader::load('Devel::SlowBless', $VERSION);
@@ -95,7 +95,8 @@ into overloaded classes to be slow.
 This module provides functions to introspect the current value of the
 PL_sub_generation and the PL_amagic_generation internal perl variables,
 as well as a perl debugger implementation that will print out a stack
-trace whenever either of these variables changes.
+trace whenever either of these variables changes. As of Perl 5.17.1,
+PL_amagic_generation has been removed and always returns 0.
 
 Whenever either of these variables changes, the bless() function slows
 down as perl examines the entire class hierarchy recomputing the overloads

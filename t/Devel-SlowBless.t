@@ -33,4 +33,8 @@ $start = Devel::SlowBless::amg_gen;
 eval 'use overload q("") => sub { 1 }';
 
 $next = Devel::SlowBless::amg_gen;
-cmp_ok($next, '>', $start);
+if ($^V < v5.17.1) {
+  cmp_ok($next, '>', $start);
+} else {
+  cmp_ok($next + $start, '=', 0);
+}
