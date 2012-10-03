@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               Devel-SlowBless
-version:            0.05
+version:            0.06
 abstract:           Perl extension for identifying code that causes bless
 author:
     - Benjamin Holzman <bholzman@earthlink.net>, Grant Street Group <developers@grantstreet.com>

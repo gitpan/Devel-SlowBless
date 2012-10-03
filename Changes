@@ -1,6 +1,9 @@
 Revision history for Perl extension Devel::SlowBless.
 
-0.05  Mon Oct 10 09:35:00 2012
+0.06  Wed Oct 03 02:09:00 2012
+    - fixes to test for 5.8.9 and 5.17+
+
+0.05  Mon Oct 01 09:35:00 2012
     - Add support for Perl >= 5.17.1 where PL_amagic_generation has been
       removed.
 
